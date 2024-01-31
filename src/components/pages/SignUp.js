@@ -15,19 +15,18 @@ const Signup = () => {
         e.preventDefault();
         setError('');
 
-        // Basic validation
+        
         if (password !== confirmPassword) {
             setError('Passwords do not match');
             return;
         }
 
         try {
-            // const user = await api.signup(email, password);
             const user = 'Pallavi';
             setUser(user);
-            navigate('/'); // Redirect to home page after signup
+            navigate('/'); 
         } catch (err) {
-            setError(err.message); // Handle error
+            setError(err.message); 
         }
     };
 

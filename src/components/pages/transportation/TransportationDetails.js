@@ -12,13 +12,11 @@ const TransportationDetails = () => {
     };
 
     const handleBooking = () => {
-        // Assuming a basic structure for a new booking
         const newBooking = {
-            id: Math.floor(Date.now() / 10000), // Unique ID for the booking (for example, current timestamp)
+            id: Math.floor(Date.now() / 10000), 
             transportationId: option.id,
             description: option.description,
-            numberOfPassengers: 1 // Default number of passengers
-            // Add other relevant details if needed
+            numberOfPassengers: 1 
         };
         navigate('/booking', { state: { newBooking } });
     };

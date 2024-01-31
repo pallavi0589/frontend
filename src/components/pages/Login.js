@@ -14,12 +14,11 @@ const Login = () => {
         e.preventDefault();
         setError('');
         if (email === 'pallavi@example.com' && password === '1234') {
-            // Simulating user authentication
+            
             setUser({ email });
-            setIsAuthenticated(true); // Set the isAuthenticated to true
-            navigate('/transportations'); // Navigate to the TransportationDetails
+            setIsAuthenticated(true); 
+            navigate('/transportations'); 
         } else {
-            // If credentials do not match, set an error message
             setError('Invalid email or password.');
         }
     };
