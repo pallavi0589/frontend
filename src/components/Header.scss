@@ -1,0 +1,30 @@
+﻿.header {
+	background-color: #343a40;
+	color: white;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.brand {
+		font-size: 1.8rem;
+		text-decoration: none;
+		color: white;
+
+		&:hover {
+			color: lighten(white, 10%);
+		}
+	}
+
+	.navigation {
+		a {
+			color: white;
+			text-decoration: none;
+			margin-left: 1rem;
+
+			&:hover {
+				color: lighten(white, 10%);
+			}
+		}
+	}
+}
